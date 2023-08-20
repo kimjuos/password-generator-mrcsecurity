@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>mrcsecurity</title>
+    <meta name="description" content="Giriş Ekranı">
+    <meta name="keywords" content="Hızlı Giris Parola oluşturmak">
+    <meta http-equiv="content-language" content="tr">
+    <meta http-equiv="refresh" content="60">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+<body>
+    <div class="box-generator">
+        <h1>Güvenli Parola Oluştur</h1>
+        <div class="box-input">
+           <input type="text" id="input_password">
+           <button id="copy-password"><img src="css/copy.svg" class="copy-img"></button>
+        </div>
+
+       <h3>Uzunluk</h3>
+       <div class="password-lenght">
+           <div class="box-range">
+               <span>4</span>
+               <input type="range" id="range-selector" min="4" max="34" value="15">
+               <span>34</span>
+           </div>
+           <input type="number" id="number-selector" min="4" max="34" value="15">
+       </div>
+
+       <h3>Ayarlar</h3>
+
+       <div class="settings-box">
+           <div class="setting-option">
+               <p>Büyük Harf Kullan</p>
+               <div class="switch-button">
+                   <input type="checkbox" id="uppercase">
+                   <label for="uppercase" class="button-label"></label>
+               </div>
+           </div>
+           <div class="setting-option">
+               <p>Küçük Harf Kullan</p>
+               <div class="switch-button">
+                   <input type="checkbox" id="lowercase">
+                   <label for="lowercase" class="button-label"></label>
+               </div>
+           </div>
+           <div class="setting-option">
+               <p>Rakam Kullan</p>
+               <div class="switch-button">
+                   <input type="checkbox" id="numbers">
+                   <label for="numbers" class="button-label"></label>
+               </div>
+           </div>
+           <div class="setting-option">
+               <p>Sembol Kullan</p>
+               <div class="switch-button">
+                   <input type="checkbox" id="symbols">
+                   <label for="symbols" class="button-label"></label>
+               </div>
+           </div>
+       </div>
+
+       <button id="button_generate">Parola Oluştur</button>
+
+   </div>
+</body>
+</html>
